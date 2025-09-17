@@ -71,28 +71,28 @@ function Contact(){
 
   return(
     <>
-      <div style = {{ marginLeft: '24.5vw', alignItems: 'center', height: 'clamp(10vh, 80vh, 90vh)', width: 'clamp(10vw, 45vw, 90vw)'}}> 
-        <form style = {{ display: 'grid', gridTemplateRows: 'repeat(4, 1fr)', gridTemplateColumns: 'repeat(2, 1fr)'}} onSubmit={handleSubmit}>
+      <div style = {{ marginLeft: '21.5vw', alignItems: 'center', height: 'clamp(10vh, 80vh, 90vh)', width: 'clamp(10vw, 45vw, 90vw)'}}> 
+        <form style = {{ height: 'clamp(10vh, 70vh, 80vh)', width: 'clamp(10vw, 45vw, 90vw)', display: 'grid', gridTemplateRows: 'repeat(4, 1fr)', gridTemplateColumns: 'repeat(2, 1fr)'}} onSubmit={handleSubmit}>
           
-          <h2 style = {{ gridColumn: '1 / 3', gridRow: 1, fontSize: 'clamp(10px, 4vw + 4vh, 60px)', color: '#fc6f03'}}> Contact Us! </h2>
+          <h2 style = {{ gridColumn: '1 / 3', gridRow: 1, fontSize: 'clamp(10px, 4vw + 4vh, 60px)', fontFamily: 'Comic Sans MS'}}> <span style = {{ color: 'gray'}}> Contact </span> <span style = {{ color: '#fc6f03'}}> Us! </span> </h2>
          
           <div style = {{ gridColumn: 1, gridRow: 2}}>
-              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', width: 'clamp(5vw, 15vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name:" required />
+              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', fontFamily: 'Comic Sans MS', width: 'clamp(5vw, 17vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name:" required />
           </div>
           
           <div style = {{ gridColumn: 2, gridRow: 2,}}>
-              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', width: 'clamp(5vw, 15vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="number" value={number} onChange={(e) => setNumber(e.target.value)} placeholder="Number:" required />
+              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', fontFamily: 'Comic Sans MS', width: 'clamp(5vw, 17vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="tel" value={number} onChange={(e) => setNumber(e.target.value)} placeholder="Number:" required />
           </div>
           
           <div style = {{ gridColumn: 1, gridRow: 3}}>
-              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', width: 'clamp(5vw, 15vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email:" required />
+              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', fontFamily: 'Comic Sans MS', width: 'clamp(5vw, 17vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email:" required />
           </div>
           
           <div style = {{ gridColumn: 2, gridRow: 3}}>
-              <textarea style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', width: 'clamp(5vw, 20vw, 50vw)', height: 'clamp(5vh, 10vh, 50vh)'}} type="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message:" required />
+              <textarea style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', fontFamily: 'Comic Sans MS', width: 'clamp(5vw, 20vw, 50vw)', height: 'clamp(5vh, 10vh, 50vh)'}} value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message:" required />
           </div>
           
-          <div style = {{ gridColumn: '1 / 3', gridRow: 4}}> <button style = {{ boxShadow: "2px 0px 12px rgba(252, 111, 3, 1)", fontSize: 'clamp(10px, 2vw + 2vh, 20px)', color: 'black', backgroundColor: '#fc6f03', width: 'clamp(1vw, 7vw, 10vw)', height: 'clamp(1vh, 7vh, 10vh)'}} type="submit"> <strong> Submit </strong> </button> </div>
+          <div style = {{ width: 'clamp(30vw, 50vw, 60vw)', height: 'clamp(1vh, 10vh, 20vh)', display: 'flex', justifyContent: 'center', alignItems: 'center', gridColumn: '1 / 3', gridRow: 4}}> <button style = {{ display: 'flex', justifyContent: 'center', fontFamily: 'Comic Sans MS', boxShadow: "2px 0px 12px rgba(252, 111, 3, 1)", fontSize: 'clamp(1px, 1vw + 1vh, 20px)', color: 'black', backgroundColor: '#fc6f03', width: 'clamp(1vw, 7vw, 10vw)', height: 'clamp(1vh, 6vh, 7vh)'}} type="submit"> <strong> Submit </strong> </button> </div>
         </form>
 
       </div>
@@ -150,7 +150,8 @@ export default function App() {
         {tab === 'Home' && <Home /> }
         {tab === 'Products' && <p> Future Products </p>}
       </div>
-
+      
+     {/* Popup */}
      {/*<div style = {{ position: 'absolute', left: '200px', top: '160px'}}> <div onClick={() => setPopupAbierto(!popupAbierto)} style = {{ position: 'fixed', bottom: popupAbierto ? '200px' : '60px', left: '450px', transform: 'translateX(-50%)', width: '20px', color: 'white', cursor: 'pointer', boxShadow: "0 4px 9px rgba(0,0,0,0.3)", zIndex: 1000, transition: 'bottom 0.3s'}}> ^ </div> 
         {popupAbierto === true && (<div style = {{ position: "fixed", bottom: "0px", left: '380px', width: "100px", height: "50px", bottom: '100px', backgroundColor: "white", color: "black", padding: "20px", borderRadius: '50px', boxShadow: "0 -4px 10px rgba(0,0,0,0.3)", zIndex: 999, transform: 'translateY(-11.2%)', transition: 'bottom 0.6s ease, transform 0.6s ease'}}> 
           <p> hola guapos </p>
