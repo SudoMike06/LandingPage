@@ -1,4 +1,5 @@
 import './App.css'
+import Login from './Login'
 import { useState } from 'react'
 
 /* Nota: Hacer que sea adaptativo respecto al dispositivo en el que se entre */
@@ -53,6 +54,52 @@ function Services(){
   );
 }
 
+function Contact(){
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Name:", name);
+    console.log("Number:", number);
+    console.log("Email:", email);
+    console.log("Message:", message);
+    alert(`Enviado Correctamente`);
+  }
+
+  return(
+    <>
+      <div style = {{ marginLeft: '24.5vw', alignItems: 'center', height: 'clamp(10vh, 80vh, 90vh)', width: 'clamp(10vw, 45vw, 90vw)'}}> 
+        <form style = {{ display: 'grid', gridTemplateRows: 'repeat(4, 1fr)', gridTemplateColumns: 'repeat(2, 1fr)'}} onSubmit={handleSubmit}>
+          
+          <h2 style = {{ gridColumn: '1 / 3', gridRow: 1, fontSize: 'clamp(10px, 4vw + 4vh, 60px)', color: '#fc6f03'}}> Contact Us! </h2>
+         
+          <div style = {{ gridColumn: 1, gridRow: 2}}>
+              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', width: 'clamp(5vw, 15vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name:" required />
+          </div>
+          
+          <div style = {{ gridColumn: 2, gridRow: 2,}}>
+              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', width: 'clamp(5vw, 15vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="number" value={number} onChange={(e) => setNumber(e.target.value)} placeholder="Number:" required />
+          </div>
+          
+          <div style = {{ gridColumn: 1, gridRow: 3}}>
+              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', width: 'clamp(5vw, 15vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email:" required />
+          </div>
+          
+          <div style = {{ gridColumn: 2, gridRow: 3}}>
+              <textarea style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', width: 'clamp(5vw, 20vw, 50vw)', height: 'clamp(5vh, 10vh, 50vh)'}} type="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message:" required />
+          </div>
+          
+          <div style = {{ gridColumn: '1 / 3', gridRow: 4}}> <button style = {{ boxShadow: "2px 0px 12px rgba(252, 111, 3, 1)", fontSize: 'clamp(10px, 2vw + 2vh, 20px)', color: 'black', backgroundColor: '#fc6f03', width: 'clamp(1vw, 7vw, 10vw)', height: 'clamp(1vh, 7vh, 10vh)'}} type="submit"> <strong> Submit </strong> </button> </div>
+        </form>
+
+      </div>
+    </>
+  );
+}
+
 export default function App() {
   const [tab, setTab] = useState('Home');
 //const [popupAbierto, setPopupAbierto] = useState(true);
@@ -98,7 +145,7 @@ export default function App() {
       {/* Pestañas */}
       <div style = {{ display: 'flex', height: 'clamp(40vh, 80vh, 80vh)', width: 'clamp(40vw, 96vw, 96vw)',  marginTop: '15vh'}}>
         {tab === 'About' && <p style = {{ color: '#BBBAC6', fontSize: '18px'}}> Information about our team </p> }
-        {tab === 'Contact' && <p style = {{ color: '#BBBAC6', fontSize: '18px'}}> Our contacts </p> } 
+        {tab === 'Contact' && <Contact /> } 
         {tab === 'Services' && <Services /> }
         {tab === 'Home' && <Home /> }
         {tab === 'Products' && <p> Future Products </p>}
@@ -109,7 +156,6 @@ export default function App() {
           <p> hola guapos </p>
         </div>)} 
       </div> */}
-
     </>
   )
 }
