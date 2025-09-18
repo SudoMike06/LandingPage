@@ -1,0 +1,8 @@
+.box {
+  box-shadow: 3px 5px 10px rgba(255,255,255,1.0);
+  display: flex;
+  justify-content: center;
+  width: clamp(10vw, 20vw, 30vw);
+  height: clamp(10vh, 30vh, 30vh);
+  border: 2px solid white;
+}

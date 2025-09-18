@@ -1,0 +1,6 @@
+.input {
+  font-size: clamp(10px, 3vw + 3vh, 25px);
+  font-family: Comic Sans MS;
+  width: clamp(5vw, 17vw, 20vw);
+  height: clamp(2vh, 5vh, 20vh);
+}

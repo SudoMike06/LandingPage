@@ -1,5 +1,5 @@
-import { useState } from 'react'
-
+import { useState } from 'react' 
+import './Contact.css'
 function Contact(){
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
@@ -23,19 +23,19 @@ function Contact(){
           <h2 style = {{ gridColumn: '1 / 3', gridRow: 1, fontSize: 'clamp(10px, 4vw + 4vh, 60px)', fontFamily: 'Comic Sans MS'}}> <span style = {{ color: 'gray'}}> Contact </span> <span style = {{ color: '#fc6f03'}}> Us! </span> </h2>
          
           <div style = {{ gridColumn: 1, gridRow: 2}}>
-              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', fontFamily: 'Comic Sans MS', width: 'clamp(5vw, 17vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name:" required />
+              <input className='input' type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name:" required />
           </div>
           
           <div style = {{ gridColumn: 2, gridRow: 2,}}>
-              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', fontFamily: 'Comic Sans MS', width: 'clamp(5vw, 17vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="tel" value={number} onChange={(e) => setNumber(e.target.value)} placeholder="Number:" required />
+              <input className='input' type="tel" value={number} onChange={(e) => setNumber(e.target.value)} placeholder="Number:" required />
           </div>
           
           <div style = {{ gridColumn: 1, gridRow: 3}}>
-              <input style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', fontFamily: 'Comic Sans MS', width: 'clamp(5vw, 17vw, 20vw)', height: 'clamp(2vh, 5vh, 20vh)'}} type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email:" required />
+              <input className='input' type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email:" required />
           </div>
           
           <div style = {{ gridColumn: 2, gridRow: 3}}>
-              <textarea style = {{ fontSize: 'clamp(10px, 3vw + 3vh, 25px)', fontFamily: 'Comic Sans MS', width: 'clamp(5vw, 20vw, 50vw)', height: 'clamp(5vh, 10vh, 50vh)'}} value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message:" required />
+              <textarea className='input' style = {{ height: 'clamp(5vh, 10vh, 50vh)'}} value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message:" required />
           </div>
           
           <div style = {{ width: 'clamp(30vw, 50vw, 60vw)', height: 'clamp(1vh, 10vh, 20vh)', display: 'flex', justifyContent: 'center', alignItems: 'center', gridColumn: '1 / 3', gridRow: 4}}> <button style = {{ display: 'flex', justifyContent: 'center', fontFamily: 'Comic Sans MS', boxShadow: "2px 0px 12px rgba(252, 111, 3, 1)", fontSize: 'clamp(1px, 1vw + 1vh, 20px)', color: 'black', backgroundColor: '#fc6f03', width: 'clamp(1vw, 7vw, 10vw)', height: 'clamp(1vh, 6vh, 7vh)'}} type="submit"> <strong> Submit </strong> </button> </div>
@@ -46,4 +46,4 @@ function Contact(){
   );
 }
 
-export default Contact;
+export default Contact
