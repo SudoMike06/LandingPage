@@ -47,3 +47,36 @@ html, body {
   min-height: 100vh;
   box-sizing: border-box; /* importante para que padding y border no rompan ancho */
 }
+
+button.especial {
+  background-color: #3A4E70;
+  color: #BBBAC6;
+  font-size: clamp(14px, 1vw + 1vh, 20px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  outline: none;
+  transition: all 0.1s ease;
+  transform: translateY(0);
+}
+
+button.especial2 {
+  background-color: #fc6f03;
+  color: black;
+  font-size: clamp(14px, 1vw + 1vh, 20px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  outline: none;
+  transition: all 0.1s ease;
+  transform: translateY(0);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+hr {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 13vh;
+  border: 2px solid #BBBAC6;
+  box-shadow: 0 2px 5px rgba(187, 186, 198);
+}

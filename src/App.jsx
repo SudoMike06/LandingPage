@@ -27,32 +27,19 @@ export default function App() {
       
       {/* Botones del header (NO TOCAR) */}
         <div style = {{display: 'flex', gap: '2vw', flexwrap: 'wrap'}}>
-          <button style = {{ backgroundColor: '#3A4E70', color: '#BBBAC6', fontSize: 'clamp(14px, 1vw + 1vh, 20px)', boxShadow: "0 2px 5px rgba(0,0,0,0.3)", outline: 'none', transition: 'all 0.1s ease'}} 
-            onMouseDown={e => (e.target.style.transform = "translateY(2px)")}
-            onMouseUp={e => (e.target.style.transform = "translateY(0)")} onClick = {() => setTab('Home')}> Home </button> 
 
-          <button style = {{ backgroundColor: '#3A4E70', color: '#BBBAC6', fontSize: 'clamp(14px, 1vw + 1vh, 20px)', boxShadow: "0 2px 5px rgba(0,0,0,0.3)", outline: 'none', transition: 'all 0.1s ease'}} 
-            onMouseDown={e => (e.target.style.transform = "translateY(2px)")}
-            onMouseUp={e => (e.target.style.transform = "translateY(0)")} onClick = {() => setTab('Services')}> Services </button> 
+          <button className="especial" onClick = {() => setTab('Home')}> Home </button> 
+          <button className="especial" onClick = {() => setTab('Services')}> Services </button> 
+          <button className="especial" onClick = {() => setTab('Products')}> Products </button> 
+          <button className="especial" onClick={() => setTab('About')}> About Us </button> 
 
-          <button style = {{ backgroundColor: '#3A4E70', color: '#BBBAC6', fontSize: 'clamp(14px, 1vw + 1vh, 20px)', boxShadow: "0 2px 5px rgba(0,0,0,0.3)", outline: 'none', transition: 'all 0.1s ease'}} 
-            onMouseDown={e => (e.target.style.transform = "translateY(2px)")}
-            onMouseUp={e => (e.target.style.transform = "translateY(0)")} onClick = {() => setTab('Products')}> Products </button> 
-
-          <button style = {{ backgroundColor: '#3A4E70', color: '#BBBAC6' , fontSize: 'clamp(14px, 1vw + 1vh, 20px)', boxShadow: "0 2px 5px rgba(0,0,0,0.3)", outline: 'none', transition: 'all 0.1s ease'}} 
-            onMouseDown={e => (e.target.style.transform = "translateY(2px)")}
-            onMouseUp={e => (e.target.style.transform = "translateY(0)")}onClick={() => setTab('About')}> About Us </button> 
-
-          <button style = {{ backgroundColor: '#fc6f03', color: 'black', fontSize: 'clamp(14px, 1vw + 1vh, 20px)', boxShadow: "0 2px 5px rgba(0,0,0,0.3)", outline: 'none', transition: 'all 0.1s ease'}} 
-            onMouseDown={e => (e.target.style.transform = "translateY(2px)")}
-            onMouseUp={e => (e.target.style.transform = "translateY(0)")} onClick = {() => setTab('Contact')}> Contact Us </button>
+          <button className="especial2" onClick = {() => setTab('Contact')}> Contact Us </button>
 
         </div>
       </div>
 
-      {/* Barra horizontal (NO TOCAR)*/}
-      <hr style = {{ position: 'fixed', width: '100vw', left: 0, top: '13vh', border: "2px solid #BBBAC6", boxShadow: "0 2px 5px rgba(187, 186, 198)"}} />
-
+      {/* Barra horizontal */}
+      <hr />     
       {/* Pestañas */}
       <div style = {{ display: 'flex', height: 'clamp(40vh, 80vh, 80vh)', width: 'clamp(40vw, 96vw, 96vw)',  marginTop: '15vh'}}>
         {tab === 'About' && <p style = {{ color: '#BBBAC6', fontSize: '18px'}}> Information about our team </p> }
