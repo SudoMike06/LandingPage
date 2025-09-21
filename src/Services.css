@@ -1,8 +1,22 @@
 .box {
   box-shadow: 3px 5px 10px rgba(255,255,255,1.0);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: clamp(10vw, 20vw, 30vw);
   height: clamp(10vh, 30vh, 30vh);
   border: 2px solid white;
+  transition: all 0.1s ease;
+  transform: translateY(0);
+}
+
+.box:hover {
+  transform: translateY(5px);
+}
+
+img{
+  height: clamp(20vh, 22vh, 25vh);
+  width: clamp(10vw, 12vw, 15vw);
+  margin-bottom: 30px;
 }
