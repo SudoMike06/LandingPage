@@ -23,8 +23,8 @@ function Home(){
 
         </div>
         
-        <div style = {{ width: 'clamp(5vw, 30vw, 80vw)', height: 'clamp(5vh, 70vh, 80vh)', border: "2px solid white", display: 'flex', padding: '20px', justifyContent: 'center', alignItems: 'center', borderRadius: '40px'}}>
-          <iframe src = 'https://www.youtube.com/embed/eVoRmpDjB-M' allowFullScreen width = 'clamp(10vw, 30vw, 40vw)' height = 'clamp(10vh, 30vh, 40vh)'> </iframe>
+        <div style = {{ width: 'clamp(5vw, 30vw, 80vw)', height: 'clamp(5vh, 70vh, 80vh)', border: "2px solid white", display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '40px'}}>
+          <iframe src = 'https://www.youtube.com/embed/eVoRmpDjB-M' allowFullScreen width = 'clamp(1vw, 20vw, 30vw)' height = 'clamp(10vh, 30vh, 40vh)'> </iframe>
         </div>
       </div>
     </>

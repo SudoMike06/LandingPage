@@ -51,21 +51,23 @@ html, body {
 button.especial {
   background-color: #3A4E70;
   color: #BBBAC6;
-  font-size: clamp(14px, 1vw + 1vh, 20px);
+  font-size: clamp(10px, 0.5vw + 1vh, 20px);
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   outline: none;
   transition: all 0.1s ease;
   transform: translateY(0);
+  box-sizing: border-box;
 }
 
 button.especial2 {
   background-color: #fc6f03;
   color: black;
-  font-size: clamp(14px, 1vw + 1vh, 20px);
+  font-size: clamp(10px, 0.5vw + 1vh, 20px);
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   outline: none;
   transition: all 0.1s ease;
   transform: translateY(0);
+  box-sizing: border-box;
 }
 
 button:active {

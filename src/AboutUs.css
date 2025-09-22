@@ -1,0 +1,26 @@
+.separacion{
+  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  width: clamp(10vw, 100vw, 100vw);
+  height: clamp(10vh, 80vh, 80vh);
+}
+
+.map {
+  margin-top: 30px;
+  width: clamp(10vw, 50vw, 60vw);
+  height: clamp(10vh, 75vh, 75vh);
+  border: 0;
+}
+
+.titulo {
+  color: orange;
+  font-size: clamp(1px, calc(1.25vh + 1.25vw), 30px);
+}
+
+.sections {
+  width: clamp(1vw, 40vw, 40vw);
+  height: clamp(1vh, 25vh, 25vh);
+  font-size: clamp(5px, calc(0.75vh + 0.75vw), 20px);
+}

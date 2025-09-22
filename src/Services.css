@@ -15,7 +15,7 @@
   transform: translateY(5px);
 }
 
-img{
+.imagen{
   height: clamp(20vh, 22vh, 25vh);
   width: clamp(10vw, 12vw, 15vw);
   margin-bottom: 30px;
