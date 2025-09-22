@@ -70,7 +70,12 @@ button.especial2 {
   box-sizing: border-box;
 }
 
-button:active {
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button.especial:active, button.especial2:active {
   transform: translateY(2px);
 }
 
