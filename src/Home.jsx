@@ -4,7 +4,7 @@ function Home(){
   return(
     <>
       <div style = {{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
-        <div style = {{ height: 'clamp(10vh, 40vh, 40vh)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>  
+        <div style = {{ height: 'clamp(10vh, 60vh, 60vh)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>  
 
           <button className='poliERP' >
             <p className='texto' > <strong> poli[ERP] </strong> </p>

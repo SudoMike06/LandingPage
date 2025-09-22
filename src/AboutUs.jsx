@@ -11,7 +11,7 @@ function AboutUs(){
           <strong> Daniel Villena Lillo </strong> <br />
           <span> <strong> Bohdan Zakharov \ </strong> </span>
           <strong> Tomás Otero </strong> <br /> 
-          <strong> Nigger </strong> 
+          <strong> Sergio </strong> 
         </div>
 
         <div className='sections' style = {{ gridRow: 2, gridColumn: 1}}>

@@ -15,7 +15,7 @@
 }
 
 .titulo {
-  color: orange;
+  color: #fc6f03;
   font-size: clamp(1px, calc(1.25vh + 1.25vw), 30px);
 }
 

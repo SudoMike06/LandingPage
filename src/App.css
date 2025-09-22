@@ -41,16 +41,16 @@
 }
 
 html, body {
-  margin: 0;       /* elimina márgenes por defecto */
+  margin: 0;
   padding: 0;
-  width: 100%;    /* 100% del viewport */
+  width: 100%;
   min-height: 100vh;
-  box-sizing: border-box; /* importante para que padding y border no rompan ancho */
+  box-sizing: border-box;
 }
 
 button.especial {
-  background-color: #3A4E70;
-  color: #BBBAC6;
+  background-color: #2C302E;
+  color: white;
   font-size: clamp(10px, 0.5vw + 1vh, 20px);
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   outline: none;

@@ -17,7 +17,7 @@
 
 .poliERP:hover {
   border-color: transparent;
-  transform: translateY(5px);
+  transform: perspective(500px) translateZ(45px);
 }
 
 .poliERP:active {
@@ -38,17 +38,19 @@
   width: clamp(10vw, 97vw, 97vw);
 }
 .beneficio-card {
-  background-color: #1e1e1e;
+  background-color: #2C302E;
   padding: 20px;
   border-radius: 15px;
   color: white;
   text-align: center;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
   font-size: clamp(0.8vw, 0.25vw + 0.25vh, 1vh);
 
 }
 
 .beneficio-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+
+

@@ -1,0 +1,6 @@
+.plan {
+  font-family: Comic Sans MS;
+  font-size: clamp(10px, 2vh + 2vw, 35px);
+  align-items: center;
+  border-radius: 20px;
+}
