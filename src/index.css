@@ -64,3 +64,7 @@ button:hover {
     background-color: #f9f9f9;
   }
 }
+
+#home, #services, #products, #aboutUs, #contact {
+  scroll-margin-top: 18vh; 
+}

@@ -17,7 +17,7 @@ function Contact(){
 
   return(
     <>
-      <div style = {{ marginLeft: '21.5vw', alignItems: 'center', height: 'clamp(10vh, 80vh, 90vh)', width: 'clamp(10vw, 45vw, 90vw)'}}> 
+      <div style = {{ marginLeft: '21.5vw', alignItems: 'center', height: 'clamp(10vh, 80vh, 90vh)', width: 'clamp(10vw, 50vw, 90vw)'}}> 
         <form style = {{ height: 'clamp(10vh, 70vh, 80vh)', width: 'clamp(10vw, 45vw, 90vw)', display: 'grid', gridTemplateRows: 'repeat(4, 1fr)', gridTemplateColumns: 'repeat(2, 1fr)'}} onSubmit={handleSubmit}>
           
           <h2 style = {{ gridColumn: '1 / 3', gridRow: 1, fontSize: 'clamp(10px, 4vw + 4vh, 60px)', fontFamily: 'Comic Sans MS'}}> <span style = {{ color: 'gray'}}> Contact </span> <span style = {{ color: '#fc6f03'}}> Us! </span> </h2>

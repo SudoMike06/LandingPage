@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 2fr 1fr 1fr;
-  width: clamp(10vw, 100vw, 100vw);
+  width: clamp(10vw, 96vw, 96vw);
   height: clamp(10vh, 80vh, 80vh);
 }
 
