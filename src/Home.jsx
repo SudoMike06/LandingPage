@@ -1,9 +1,10 @@
 import './Home.css'
-
+//import Popup from './Popup'
 function Home(){
   return(
     <>
       <div style = {{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+        {/*<Popup />*/}
         <div style = {{ height: 'clamp(10vh, 60vh, 60vh)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>  
 
           <button className='poliERP' >

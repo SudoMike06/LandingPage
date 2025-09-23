@@ -13,7 +13,7 @@ function Login(){
 
   return(
     <>
-      <div style = {{ maxWidth: '400px', margin: 'auto', padding: '2rem'}}> 
+        <div style = {{ display: 'flex', flexDirection: 'column', border: '2px solid white', width: 'clamp(10vw, 10vw, 30vw)', height: 'clamp(10vh, 10vh, 30vh)', margin: 'auto', paddingTop: '100px'}}> 
         <h2> Login </h2>
         <form onSubmit={handleSubmit}>
           <div>

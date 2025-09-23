@@ -45,7 +45,6 @@
   text-align: center;
   transition: transform 0.3s ease;
   font-size: clamp(0.8vw, 0.25vw + 0.25vh, 1vh);
-
 }
 
 .beneficio-card:hover {
